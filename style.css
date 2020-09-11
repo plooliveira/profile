@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap');
+
+*{
+  margin-bottom: 0px;
+}
+body  {
+  background-color: #d6e0f0;
+  font-family: 'Work Sans', sans-serif;
+  min-height: 100vh;
+}
+
+footer {
+  /* left: 0;
+  bottom: 0; */
+  width: 100%;
+  text-align: center;
+}
+.container{
+  max-width: 1200px;
+  margin: 100px auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  /* grid-gap: 1rem; */
+}
+.img-circle {
+  width: 200px;
+  margin-top: 40px;
+  border-radius: 50%;
+}
+
+.card {
+  width: 75%;
+  margin: 20px auto;
+  text-align: center;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 10px 10px 40px rgba(160,160,160, .5);
+  background-color: #f1f3f8;
+}
+
+.social i{
+  font-size: 3rem;
+  color: black;
+}
+
+.fa-linkedin:hover {
+  transform: scale(1.2);
+  transition-duration: 200ms;
+  color: #07689f;
+}
+
+.fa-github-square:hover {
+  transform: scale(1.2);
+  transition-duration: 200ms;
+}
+.fa-facebook-square:hover {
+  transform: scale(1.2);
+  transition-duration: 200ms;
+  color: #0f4c75;
+}
+
+.fa-gem:hover {
+  transform: scale(1.2);
+  transition-duration: 200ms;
+  color: #810000;
+}
+
+.fa-road:hover{
+  transform: scale(1.2);
+  transition-duration: 200ms;
+  color: #810000;
+}
+.fa-redhat:hover{
+  transform: scale(1.2);
+  transition-duration: 200ms;
+  color: #c7b198;
+  background-color: #242323;
+  border-radius: 2px;
+}
+
+.fa-database:hover {
+  transform: scale(1.2);
+  transition-duration: 200ms;
+  color: #0f4c75;
+}
+
+.fa-js-square:hover {
+  transform: scale(1.2);
+  transition-duration: 200ms;
+  color: #ffa931;
+}
+
+.fa-html5:hover {
+  transform: scale(1.2);
+  transition-duration: 200ms;
+  color: #ff5722;
+}
+
+.fa-css3-alt:hover {
+  transform: scale(1.2);
+  transition-duration: 200ms;
+  color: #00bcd4;
+}
+.fa-bootstrap:hover {
+  transform: scale(1.2);
+  transition-duration: 200ms;
+  color: #6f4a8e;
+}
+
+#skills ul {
+  list-style: none;
+}
+
+#skills li {
+  /* text-align: center; */
+  margin-right: 5%;
+  display:inline-block;
+}
+
+#skills i {
+  font-size: 3rem;
+}
+
+#main-profile{
+  width: 75%;
+  height: 600px;
+}
+
+#skills{
+  height: 400px;
+}
+
+#skills h2{
+  margin-top: 50px;
+}
+
+#skills .card {
+  height: 270px;
+}
+
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  .container {
+    width: 700px;
+  }
+}
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  .container {
+    width: 500px;
+  }
+}
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .container {
+    width: 100%;
+  }
+}
