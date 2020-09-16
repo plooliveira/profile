@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap');
 body  {
-  background-color: #d6e0f0;
+  background-color: #f6f6f6;
   font-family: 'Work Sans', sans-serif;
   min-height: 100vh;
 }
@@ -12,16 +12,20 @@ footer {
   text-align: center;
 }
 .container{
-  max-width: 1200px;
+  max-width: 1000px;
   margin: 100px auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   /* grid-gap: 1rem; */
 }
 .img-circle {
-  width: 200px;
+  width: 130px;
   margin-top: 40px;
   border-radius: 50%;
+}
+
+.secondary-text{
+  color: #989C9F;
 }
 
 .card {
@@ -30,13 +34,30 @@ footer {
   text-align: center;
   padding: 20px;
   border-radius: 5px;
-  box-shadow: 10px 10px 40px rgba(160,160,160, .5);
-  background-color: #f1f3f8;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  background-color:#FFFFFF;
+}
+.social {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.social i{
+  font-size: 2.5rem;
 }
 
-.social i{
-  font-size: 3rem;
-  color: black;
+.fas, .fab {
+  color: #BCC3C9;
+}
+
+.fa-map-marker-alt{
+  color: #989C9F;
+  border: none;  
+}
+
+.fa-heart{
+  color: #cf2929;
 }
 
 .fa-linkedin:hover {
@@ -48,11 +69,22 @@ footer {
 .fa-github-square:hover {
   transform: scale(1.2);
   transition-duration: 200ms;
+  color: black;
 }
 .fa-facebook-square:hover {
   transform: scale(1.2);
   transition-duration: 200ms;
   color: #0f4c75;
+}
+
+.fa-instagram:hover {
+  transform: scale(1.2);
+  transition-duration: 200ms;
+  color: transparent;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  background-clip: text;
+  -webkit-background-clip: text;
 }
 
 .fa-gem:hover {
@@ -70,7 +102,6 @@ footer {
   transform: scale(1.2);
   transition-duration: 200ms;
   color: #c7b198;
-  background-color: #242323;
   border-radius: 2px;
 }
 
@@ -103,18 +134,98 @@ footer {
   color: #6f4a8e;
 }
 
-#skills ul {
-  list-style: none;
+.backend-icons {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
 }
 
-#skills li {
+.backend-icons > div {
   /* text-align: center; */
-  margin-right: 5%;
-  display:inline-block;
+  width: 80px;
+  height: 70px;
+  text-align: center;
+  
 }
 
-#skills i {
-  font-size: 3rem;
+.backend-icons i {
+  font-size: 2.5rem;
+}
+.backend-icons p {
+  visibility: hidden;
+  font-size: 0.1rem;
+}
+
+.backend-icons div:hover p {
+  font-size: 1rem;
+  visibility: visible;
+  opacity: 1;
+}
+
+.backend-icons {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+}
+
+.backend-icons > div {
+  /* text-align: center; */
+  width: 80px;
+  height: 70px;
+  text-align: center;
+  
+}
+
+.backend-icons i {
+  font-size: 2.5rem;
+}
+
+.backend-icons p {
+  visibility: hidden;
+  font-size: 0.1rem;
+}
+
+.backend-icons div:hover p {
+  font-size: 1rem;
+  visibility: visible;
+  opacity: 1;
+}
+
+
+/* --- ------------------------*/
+
+.frontend-icons {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+}
+
+.frontend-icons > div {
+  /* text-align: center; */
+  width: 80px;
+  height: 70px;
+  text-align: center;
+  
+}
+
+.frontend-icons i {
+  font-size: 2.5rem;
+}
+.frontend-icons p {
+  visibility: hidden;
+  font-size: 0.1rem;
+}
+
+.frontend-icons div:hover p {
+  font-size: 1rem;
+  visibility: visible;
+  opacity: 1;
+}
+
+.centralize {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #main-profile{
@@ -123,25 +234,20 @@ footer {
 }
 
 #skills{
-  /* height: 400px; */
+  color: #BCC3C9;
 }
 
 #skills h2{
-  margin-top: 50px;
+  margin-top: 0px;
 }
 
 #skills .card {
+  position: relative;
   height: 270px;
 }
 
-@media (max-width: 960px) {
+@media (max-width: 1000px) {
   /* For a screen < 960px, this CSS will be read */
-  .container {
-    width: 700px;
-  }
-}
-@media (max-width: 720px) {
-  /* For a screen < 720px, this CSS will be read */
   .container {
     width: 500px;
   }
